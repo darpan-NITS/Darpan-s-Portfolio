@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darpan Jyoti Goswami - Portfolio</title>
+    <meta name="description" content="Portfolio of Darpan Jyoti Goswami, Electronics and Instrumentation Engineering student at NIT Silchar">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Interactive Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Floating Particles -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>DJG</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#education" class="nav-link" data-section="education">Education</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#hobbies" class="nav-link" data-section="hobbies">Hobbies</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-line highlight">Darpan Jyoti Goswami</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                </div>
+                <p class="hero-description">
+                    Driven Electronics & Instrumentation Engineering student at NIT Silchar, 
+                    passionate about innovation and real-world problem solving.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn--primary hero-btn" id="download-resume">
+                        <span>Download Resume</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn--outline hero-btn" id="view-projects">
+                        View My Work
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my journey and passions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-text">
+                        <p>Driven and detail-oriented Electronics and Instrumentation Engineering student at NIT Silchar with a good foundation in electronics, embedded systems, and programming. Skilled at quickly learning new tools and applying innovative problem-solving approaches to real-world challenges.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="8.6">0</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education Journey</h2>
+                <p class="section-subtitle">My academic path and achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-index="0">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Technology</h3>
+                            <span class="timeline-duration">Aug 2024 - Present</span>
+                        </div>
+                        <p class="timeline-institution">National Institute of Technology, Silchar</p>
+                        <p class="timeline-field">Electronics and Instrumentation Engineering</p>
+                        <div class="timeline-grade">CGPA: 8.6</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-index="1">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Higher Secondary</h3>
+                            <span class="timeline-duration">2022 - 2024</span>
+                        </div>
+                        <p class="timeline-institution">Ranjit Sarma Academy Sr. Secondary School</p>
+                        <div class="timeline-grade">Grade: 88%</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-index="2">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>High School</h3>
+                            <span class="timeline-duration">2022</span>
+                        </div>
+                        <p class="timeline-institution">Holy Child Public School, Mangaldai</p>
+                        <div class="timeline-grade">Grade: 95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">My technical expertise and proficiency levels</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item" data-skill="Python" data-level="90">
+                            <div class="skill-header">
+                                <span class="skill-name">🐍 Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">Advanced proficiency in ML, OpenCV, and automation</p>
+                        </div>
+                        <div class="skill-item" data-skill="C++" data-level="85">
+                            <div class="skill-header">
+                                <span class="skill-name">⚡ C++</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">Strong foundation in OOP and competitive programming</p>
+                        </div>
+                        <div class="skill-item" data-skill="C" data-level="80">
+                            <div class="skill-header">
+                                <span class="skill-name">🔧 C</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">Solid understanding of low-level programming concepts</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item" data-skill="TensorFlow" data-level="85">
+                            <div class="skill-header">
+                                <span class="skill-name">🧠 TensorFlow</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">Machine learning model development and deployment</p>
+                        </div>
+                        <div class="skill-item" data-skill="OpenCV" data-level="80">
+                            <div class="skill-header">
+                                <span class="skill-name">👁️ OpenCV</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">Computer vision and image processing applications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technologies & Tools</h3>
+                    <div class="skill-grid">
+                        <div class="tech-item">
+                            <span class="tech-icon">🌐</span>
+                            <span class="tech-name">HTML/CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔥</span>
+                            <span class="tech-name">Firebase</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🛠️</span>
+                            <span class="tech-name">SolidWorks</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔌</span>
+                            <span class="tech-name">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Showcasing my latest work and innovations</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">ML</button>
+                <button class="filter-btn" data-filter="web-development">Web Dev</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-category="machine-learning">
+                    <div class="project-image">
+                        <div class="project-placeholder">🤖</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ML Based Object Classifier</h3>
+                        <p class="project-description">Real-time object classifier using OpenCV and MobileNetV2 (TensorFlow), achieving fast and accurate predictions</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn--outline btn--sm project-btn" data-project="0">View Details</button>
+                            <a href="#" class="btn btn--primary btn--sm" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card" data-category="web-development">
+                    <div class="project-image">
+                        <div class="project-placeholder">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">Static portfolio website built with HTML and CSS, deployed using Firebase hosting</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn--outline btn--sm project-btn" data-project="1">View Details</button>
+                            <a href="#" class="btn btn--primary btn--sm" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <p class="section-subtitle">What I love doing in my free time</p>
+            </div>
+            <div class="hobbies-content">
+                <div class="hobby-item glass-card">
+                    <div class="hobby-icon">
+                        <div class="guitar-animation" id="guitar">
+                            <div class="guitar-body">
+                                <div class="sound-hole"></div>
+                                <div class="strings">
+                                    <div class="string" data-note="E"></div>
+                                    <div class="string" data-note="A"></div>
+                                    <div class="string" data-note="D"></div>
+                                    <div class="string" data-note="G"></div>
+                                    <div class="string" data-note="B"></div>
+                                    <div class="string" data-note="E"></div>
+                                </div>
+                            </div>
+                            <div class="guitar-neck"></div>
+                        </div>
+                    </div>
+                    <h3>Playing Guitar</h3>
+                    <p>Music is my escape. I love playing guitar and exploring different genres and techniques.</p>
+                </div>
+                
+                <div class="hobby-item glass-card">
+                    <div class="hobby-icon">
+                        <div class="rubiks-cube" id="rubiks-cube">
+                            <div class="cube-face front">
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                                <div class="cube-square red"></div>
+                            </div>
+                            <div class="cube-face back"></div>
+                            <div class="cube-face right"></div>
+                            <div class="cube-face left"></div>
+                            <div class="cube-face top"></div>
+                            <div class="cube-face bottom"></div>
+                        </div>
+                    </div>
+                    <h3>Speedcubing</h3>
+                    <p>Problem-solving at its finest. I enjoy the challenge and precision of solving Rubik's cubes quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how we can work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form glass-card">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>Click to send email</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 8099598837</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Silchar, Assam, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-project-image">
+                    <div id="modal-project-icon"></div>
+                </div>
+                <p id="modal-description"></p>
+                <div class="modal-tech" id="modal-tech"></div>
+                <div class="modal-certifications">
+                    <h4>Related Certifications:</h4>
+                    <ul id="modal-certifications-list"></ul>
+                </div>
+                <div class="modal-actions">
+                    <a id="modal-github" class="btn btn--primary" href="#" target="_blank">View on GitHub</a>
+                    <a id="modal-demo" class="btn btn--outline" href="#" target="_blank" style="display: none;">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
