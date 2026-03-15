@@ -349,7 +349,7 @@ class PortfolioApp {
                 title: 'ML Based Object Classifier',
                 description: 'Designed and deployed a real-time object classifier using OpenCV and MobileNetV2 (TensorFlow), achieving fast and accurate predictions on custom datasets. This project demonstrates advanced machine learning techniques and computer vision applications, with real-time processing capabilities and high accuracy rates.',
                 technologies: ['Python', 'OpenCV', 'TensorFlow', 'MobileNetV2'],
-                github: 'https://github.com',
+                github: 'https://github.com/darpan-NITS/Darpan-s-Portfolio',
                 category: 'Machine Learning',
                 icon: '🤖',
                 certifications: [
@@ -358,15 +358,15 @@ class PortfolioApp {
                 ]
             },
             {
-                title: 'Personal Portfolio Website',
-                description: 'Built and deployed a static personal portfolio website using HTML and CSS, and hosted using Firebase. Features modern design principles, responsive layout, and optimized performance for all devices. The website showcases projects, skills, and achievements in an interactive and engaging manner.',
-                technologies: ['HTML', 'CSS', 'Firebase'],
-                liveDemo: 'https://firebase.app',
-                github: 'https://github.com',
-                category: 'Web Development',
+                title: 'ArogyaBot',
+                description: 'An AI healthcare assistant built for India,usable in 9 Indian Languages',
+                technologies: ['Python', 'Javascript', 'Typescript'],
+                liveDemo: 'https://arogya-bot-lac.vercel.app/',
+                github: 'https://github.com/darpan-NITS/ArogyaBot',
+                category: 'AI-ML',
                 icon: '🌐',
                 certifications: [
-                    'Web Development fundamentals through practical projects'
+                    'Full stack ML project'
                 ]
             }
         ];
@@ -674,7 +674,7 @@ EDUCATION:
 Bachelor of Technology - Electronics and Instrumentation Engineering
 National Institute of Technology, Silchar
 Duration: Aug 2024 - Present
-CGPA: 8.6
+CGPA: 8.78
 
 Higher Secondary Education
 Ranjit Sarma Academy Sr. Secondary School
@@ -692,12 +692,13 @@ Programming Languages:
 • Python (Advanced - 90%)
 • C++ (Proficient - 85%)
 • C (Proficient - 80%)
+• Java (Proficient - 80%)
 
 Frameworks & Libraries:
 • TensorFlow (85%)
 • OpenCV (80%)
 • Scikit-Learn
-• Firebase Hosting
+• LLMs
 
 Technologies & Tools:
 • HTML/CSS
